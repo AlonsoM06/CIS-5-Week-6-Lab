@@ -1,7 +1,7 @@
-# Lab 6 · Decisions
+# Lab 6 · Even and odd
 
-**Week 06 · Conditionals**  
-**Theme:** The program chooses  
+**Week 06 · Loops**  
+**Theme:** Controlled repetition  
 **Type:** Lesson week
 
 
@@ -10,67 +10,56 @@
 Paste a link to a short video of you running this assignment (tool + code + run).
 Work without a working video link is incomplete.
 
+For your video, you must explain your logic for these two loops. Failure to do so will result in an incomplete assignment, which is a 0.
+
 **Your demo:** _add your link here_
 
 
-## Scenario
-An `if` statement chooses which block runs based on a true or false condition. Build a grade or eligibility tool with real thresholds, and test the edges.
+## What to build
 
-## Goals
-- `if` / `else if` / `else` with braces on every branch
-- At least one `&&` or `||` in a real condition
-- Test the edges (just-below, exactly-on, and a wild value)
-- Push + short demo + Canvas
+You will create two loops.
+
+- For loop
+- While loop
+- The for loop will sum the even numbers in the range 0–100.
+- The while loop will sum the odd numbers from 1 to 99.
+- Hint: we talked about the updater as `--i` and `i--`, but you can also write it as:
+  - `i = i - 1`
+  - `i = i + 1`
+  - `i = i * 2`
+  - `i = i - 2`
+- There are an unlimited number of choices you can use for the updater, and it's going to be up to you to figure that out.
+- You will be given a blank canvas with only the main function, and it's going to be up to you to determine how to tackle this lab.
+
+Print both sums so a run shows the work.
 
 ## Starter
-Use `main.cpp`. Put your name in the file-top comment.
+
+Use `main.cpp`. Put your name in the file-top comment. The starter is only `main`. You decide the variables.
 
 ## Environment
+
 VS 2022 · **GitHub Codespaces** · Replit · library machines
 
-## Procedure
-1. Write the rules on paper first (A ≥ 90, B ≥ 80, … — or your own)
-2. Implement with braces. Order the tests from the top
-3. Add one combined condition (`&&` or `||`) you can read aloud
-4. Run 89, 90, and 100 (or your edges). Fix what lies
-5. Commit, push, short demo, Canvas
+## Scope fence
 
-## Sample output
-```
-Score 0-100: 83
-Letter: B
-```
-
-A second run:
-```
-Score 0-100: 90
-Letter: A
-```
+No goto. No arrays. No functions other than main. If a loop never ends, stop the run and look at the update.
 
 ## Definition of done
+
 - Compiles with zero errors
-- Multi-way decision + one combined condition
-- Edges tested (show at least two runs in the demo)
+- A `for` loop sums the evens, then a `while` loop sums the odds
+- The video explains the logic of both loops
 - Repo + short demo + Canvas
 
 ## Rubric (100)
+
 | Criterion | Pts |
 |-----------|----:|
 | Runs correctly on a supported path | 40 |
 | Meets prompt requirements | 30 |
 | Clear outcome messages | 15 |
 | GitHub + short demo video | 15 |
-
-## Scope fence
-No `goto`. Keep nesting shallow. `switch` is optional, not required.
-
-## Tips
-- `=` assigns. `==` compares
-- If 70 comes before 90, an A never arrives
-- Braces even for one line — the next edit will add a second line
-
-## Help (`/ring`)
-After a real try, include: goal · what you tried · exact error · screenshot/repo · OS + tool.
 
 ## Getting started
 
@@ -83,6 +72,6 @@ g++ -std=c++17 -o program main.cpp && ./program
 ```
 
 On Windows (Visual Studio), open `main.cpp` and use **Local Windows Debugger**.
-4. Record a short demo that shows your tool, your code, and a real run.
+4. Record a short demo that shows your tool, your code, and a real run. Explain the logic for both loops.
 5. Paste the video link in the **Demo video** section above.
 6. Submit your fork URL on Canvas.
